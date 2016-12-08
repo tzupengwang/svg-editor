@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'zona_problack';
+  src: url('../fonts/zona_problack.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0
+}
+
+html {
+}
+
+body {
+  font-family: 'zona_problack', "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.container {
+  background-color: rgb(223, 219, 209)
+  width: 100vw
+  height: 100vh
+}
+
+@import './svg-canvas'
+@import './svg-toolbar'
+
+.download-button {
+  position: absolute
+  bottom: 50px
+  right: 70px
+  border: 2px solid black
+  font-size: 1.4rem
+  line-height: 1.4rem
+  padding: 1rem 1rem
+  cursor: pointer
+  &:hover {
+    background-color: black
+    color: #8f7c4f
+  }
+}

@@ -1,0 +1,54 @@
+.svg-toolbar {
+  position: absolute
+  display: flex
+  flex-direction: column
+  justify-content: center
+  left: 0
+  width: 70px
+  height: 100vh
+  .toolbar-container {
+    width: 70px
+    display: flex
+    flex-direction: column
+    background-color: rgb(223, 219, 209)
+    border-top: 4px solid #1d1d1d
+    border-right: 4px solid #1d1d1d
+    border-bottom: 4px solid #1d1d1d
+    border-radius: 0px 11px 11px 0px
+    transition: transform .1s ease-in 0s
+    transform-origin: left
+    &:hover {
+      transform: scale(1.1)
+    }
+    .tool-item {
+      width: 70px
+      height: 70px
+      color: #1d1d1d
+      transition: color .1s ease-in 0s
+      transition: background-color .1s ease-in 0s
+      svg {
+        line, circle {
+          stroke: #1d1d1d
+        }
+      }
+      &:hover {
+        background-color: #1d1d1d
+        color: #8f7c4f
+        svg {
+          line, circle {
+            stroke: #8f7c4f
+          }
+        }
+      }
+      &.active {
+        background-color: #444444
+        color: #8f7c4f
+        svg {
+          line, circle {
+            stroke: #8f7c4f
+          }
+        }
+      }
+    }
+  }
+}
